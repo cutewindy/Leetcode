@@ -23,8 +23,10 @@ def prime(n):
 
 
 print prime(1)
-print prime(2)
+
 print prime(100)
 print prime(-8)
+print prime(0)
+print prime(99)
 
 print len(prime(100))
