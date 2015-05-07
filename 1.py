@@ -1,12 +1,14 @@
 def searchInsert(nums, target):
-    count = 0
+#     count = 0
     for num in nums:
         if num >= target:
             return nums.index(num)
-        else:
-            count += 1
-    if count == len(nums):
-        return len(nums)
+        
+    return len(nums)
+#         else:
+#             count += 1
+#     if count == len(nums):
+#         return len(nums)
 
 
 
