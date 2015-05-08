@@ -7,21 +7,6 @@
 
 def maxProfit(prices):
     earn = 0
-#     if len(prices) == 0 or len(prices) == 1:
-#         return earn
-#     elif len(prices) == 2 and prices[0] <= prices[1]:
-#         return prices[1] - prices[0]
-#     elif len(prices) > 2:
-#         if prices[0] <= prices[1]:
-#             earn -= prices[0]
-#         for i in range(1, len(prices) - 1):
-#             if prices[i - 1] > prices[i] and prices[i] <= prices[i + 1]:
-#                 earn -= prices[i] 
-#             if prices[i - 1] < prices[i] and prices[i] >= prices[i + 1]:
-#                 earn += prices[i]  
-#         if prices[len(prices) - 2] < prices[len(prices) - 1]:
-#             earn += prices[len(prices) - 1]
-
     for i in range(len(prices)-1):
         if prices[i] < prices[i + 1]:
             earn += prices[i+1] - prices[i]
