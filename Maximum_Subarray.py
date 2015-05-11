@@ -5,12 +5,14 @@
 
 
 def maxSubArray(nums):
-    cursum, maxsum = 0.0, 0.0
+    cursum = -1 * (1 << 30)
+    maxsum = cursum
     for num in nums:
         cursum = max(num, num + cursum)
-        print cursum
+#         print cursum
         maxsum = max(cursum, maxsum)
-        print maxsum
+#         print maxsum
     return maxsum
 
 print maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+print maxSubArray([-1])
