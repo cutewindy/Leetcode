@@ -33,8 +33,8 @@ def searchMatrixI(matrix, target):
         if matrix[i][col] > target:
             for j in range(col):
                 if matrix[i][j] == target:
-                    return True
-
+                    return True            
+            return False
     return False
 
 print searchMatrixI([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]], 3)
